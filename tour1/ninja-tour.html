@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Tour 1 – Hành Trình Ninja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Be+Vietnam+Pro:wght@300;600&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="ninja-style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="ninja-effect.js"></script>
+</head>
+<body>
+  <div class="controls">
+    <button id="musicBtn" onclick="toggleMusic()">🎵 Bật/Tắt nhạc</button>
+    <audio id="music" src="music/konoha-peace.mp3" loop></audio>
+  </div>
+
+  <script>
+    const audio = document.getElementById('music');
+    function toggleMusic() {
+      if (audio.paused) audio.play();
+      else audio.pause();
+    }
+  </script>
+
+  <!-- HERO -->
+  <section class="hero-ninja">
+    <div class="text-box">
+      <h1>🌀 Tour 1 – <br><span>Hành Trình Ninja</span></h1>
+      <p>
+        Trải nghiệm thế giới Ninja đích thực! Hóa thân thành chiến binh ẩn mình, học kỹ năng chiến đấu và khám phá tinh hoa văn hóa Nhật Bản thời Edo – nơi những ninja huyền thoại từng tồn tại.
+      </p>
+      <div class="form-row">
+        <a href="#book" class="btn primary">🥷 Đăng ký ngay</a>
+        <a href="#itinerary" class="btn schedule">📜 Xem lịch trình</a>
+      </div>
+    </div>
+
+    <div class="image-box">
+      <div class="image-frame">
+        <img src="images/ninja-world.jpg" alt="Ninja World">
+      </div>
+      <div class="ticket">🎫 Shinobi Pass</div>
+      <div class="camera">⚔️ The Way of Shadows</div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section id="overview" class="overview">
+    <h2>Điểm nổi bật</h2>
+    <ul class="features">
+      <li>🌀 Thực hành kỹ năng ninja truyền thống: phi tiêu, ẩn thân, leo tường</li>
+      <li>🏯 Tham quan nơi làm việc của Hokage – nhân vật biểu tượng của Làng Lá</li>
+      <li>🗻 Thiền định trên núi Kōya – cân bằng tinh thần và sức mạnh nội tại</li>
+    </ul>
+  </section>
+
+  <!-- ITINERARY -->
+  <section id="itinerary" class="itinerary">
+    <h2>📜 Lịch trình chi tiết</h2>
+
+    <article class="day">
+      <h3 class="ten">🌅 Ngày 1 — Hành trình về thời Edo</h3>
+      <div class="mota">
+        <div class="time-item"><strong>07:00</strong> — Khởi hành từ Tokyo, du hành ngược thời gian về thời Edo.</div>
+        <div class="time-item"><strong>09:00</strong> — Tham quan phố cổ, thưởng thức ẩm thực truyền thống Nhật Bản.</div>
+        <div class="time-item"><strong>14:00</strong> — Ghé thăm bảo tàng văn hóa Edo – nơi trưng bày hiện vật ninja cổ.</div>
+      </div>
+    </article>
+
+    <article class="day">
+      <h3 class="ten">🥷 Ngày 2 — Làng Ninja Iga</h3>
+      <div class="mota">
+        <div class="time-item"><strong>08:00</strong> — Khám phá Làng Ninja Iga – nơi đào tạo ninja huyền thoại.</div>
+        <div class="time-item"><strong>10:30</strong> — Học ném phi tiêu, leo tường, di chuyển bí mật và huấn luyện đội hình.</div>
+        <div class="time-item"><strong>15:00</strong> — Giao lưu với bậc thầy ninja, nhận chứng nhận “Tân binh Iga”.</div>
+      </div>
+    </article>
+
+    <article class="day">
+      <h3 class="ten">🏯 Ngày 3 — Nơi làm việc của Hokage</h3>
+      <div class="mota">
+        <div class="time-item"><strong>09:00</strong> — Tìm hiểu quá trình hình thành Làng Lá.</div>
+        <div class="time-item"><strong>11:30</strong> — Thử trang phục ninja, chụp ảnh lưu niệm cùng đạo cụ cổ.</div>
+        <div class="time-item"><strong>15:00</strong> — Dự khán nghi lễ truyền thừa Hokage – biểu tượng ý chí và danh dự.</div>
+      </div>
+    </article>
+
+    <article class="day">
+      <h3 class="ten">🗻 Ngày 4 — Núi Kōya & thiền định</h3>
+      <div class="mota">
+        <div class="time-item"><strong>08:00</strong> — Dạo quanh núi Kōya, luyện tập thiền định.</div>
+        <div class="time-item"><strong>10:30</strong> — Cảm nhận “ý chí của lửa” trong từng hơi thở.</div>
+        <div class="time-item"><strong>14:00</strong> — Ghi dấu tên mình lên “Cuộn Truyện Ninja” – kỷ vật của hành trình.</div>
+      </div>
+    </article>
+
+    <div class="note">
+      <h4>📌 Ghi chú:</h4>
+      <p>Tour không hỗ trợ quay về hiện tại.<br> Mang giày thể thao và trang phục linh hoạt để tham gia các hoạt động thể chất.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="booking">
+    <h2>Đăng ký & Thông tin</h2>
+    <p>Tour chủ đề: <strong>Quá khứ</strong> | Phong cách: <strong>Khám phá / Phiêu lưu</strong> | Loại tour: <strong>1 chiều</strong></p>
+    <form class="booking-form" onsubmit="event.preventDefault(); alert('Cảm ơn! Chúng tôi sẽ liên hệ bạn sớm.');">
+      <label>Họ và tên <input type="text" required placeholder="Nguyễn Văn A" /></label>
+      <label>Email <input type="email" required placeholder="email@vd.com" /></label>
+      <label>Số điện thoại <input type="tel" required placeholder="+84 9..." /></label>
+      <label>Ghi chú (tùy chọn) <textarea placeholder="Ví dụ: muốn tham gia phần huấn luyện nâng cao..."></textarea></label>
+      <div class="form-row">
+        <button class="btn primary" type="submit">🥷 Đăng ký — 4 500 USD</button>
+        <button class="btn ghost" type="reset">🔄 Làm lại</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

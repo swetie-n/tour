@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Tour 2 – Trải Nghiệm Chú Thuật Sư</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Be+Vietnam+Pro:wght@300;600&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="jujutsu-style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jujutsu-effect.js"></script>
+</head>
+
+<body>
+  <div class="controls">
+   <button id="musicBtn" onclick="toggleMusic()">🎵 Bật/Tắt nhạc</button>
+   <audio id="music" src="music/our-mission.mp3"></audio>
+  </div>
+
+  <script>
+  const audio = document.getElementById('music');
+  function toggleMusic() {
+      if (audio.paused) audio.play();
+      else audio.pause();
+  }
+  </script>
+
+  <!-- HERO -->
+  <section class="hero-jujutsu">
+    <div class="text-box">
+      <h1>🔮 Tour 2 – <br><span>Trải Nghiệm Chú Thuật Sư</span></h1>
+      <p>
+        Bước vào thế giới huyền bí của Chú Thuật Sư – nơi chú lực, nguyền linh và ý chí chiến đấu hòa quyện thành một. 
+        Khám phá Tokyo ẩn trong lớp màn chú thuật, học cách kiểm soát năng lượng nguyền rủa và đắm chìm trong bầu không khí đầy kịch tính giữa ranh giới người – linh.
+      </p>
+      <div class="form-row">
+        <a href="#book" class="btn primary">🔮 Đăng ký ngay</a>
+        <a href="#itinerary" class="btn schedule">📜 Xem lịch trình</a>
+      </div>
+    </div>
+
+    <div class="image-box">
+      <img src="images/jujutsu-world.jpg" alt="Jujutsu World">
+      <div class="ticket">🎫 Cursed Pass</div>
+      <div class="camera">🌀 The Hidden Realm</div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section id="overview" class="overview">
+    <h2>Điểm nổi bật</h2>
+    <ul class="features">
+      <li>✨ Nhận Kính Thấy Chú Linh độc quyền – giúp bạn “nhìn thấu” thế giới nguyền rủa ẩn giấu trong Tokyo.</li>
+      <li>⚔️ Huấn luyện và thực hành Triển Chú Đơn Giản trong môi trường mô phỏng thực chiến.</li>
+      <li>🌀 Tham gia escape room chú thuật và các trò chơi chiến thuật nhóm.</li>
+      <li>🎭 Xem trình diễn chú lực đặc biệt tại Bảo tàng Chú Thuật Học.</li>
+    </ul>
+  </section>
+
+  <!-- ITINERARY -->
+  <section id="itinerary" class="itinerary">
+    <h2>📜 Lịch trình chi tiết</h2>
+
+    <article class="day">
+      <h3 class="ten">🗓 Ngày 1 — Khởi hành & Nhận kính Chú Linh</h3>
+      <div class="mota">
+        <div class="time-item"><strong>08:00</strong> — Tập trung tại Tokyo Jujutsu Center – trụ sở của các chú thuật sư hiện đại.</div>
+        <div class="time-item"><strong>09:30</strong> — Nhận kính chú linh và tham quan quán cà phê “Cursed Brew”.</div>
+        <div class="time-item"><strong>13:00</strong> — Mua sắm tại cửa hàng “Jujutsu Goods”.</div>
+      </div>
+    </article>
+
+    <article class="day">
+      <h3 class="ten">🌀 Ngày 2 — Trung Tâm Huấn Luyện Chú Thuật</h3>
+      <div class="mota">
+        <div class="time-item"><strong>09:00</strong> — Học khái niệm cơ bản: Chú lực – Nguyền linh – Triển chú.</div>
+        <div class="time-item"><strong>11:00</strong> — Thực hành kiểm soát cảm xúc & thử Triển Chú Đơn Giản.</div>
+        <div class="time-item"><strong>14:00</strong> — Mini game nhóm: tiêu diệt chú linh cấp 4!</div>
+      </div>
+    </article>
+
+    <article class="day">
+      <h3 class="ten">⚔️ Ngày 3 — Lãnh Địa và Nguyền Hồn</h3>
+      <div class="mota">
+        <div class="time-item"><strong>08:30</strong> — Trải nghiệm lãnh địa mô phỏng chú thuật.</div>
+        <div class="time-item"><strong>10:00</strong> — Escape room “Nguyền Giới” – giải mã phong ấn trong 30 phút.</div>
+        <div class="time-item"><strong>15:00</strong> — Chụp ảnh với đạo cụ: Nguyền Đao, Nguyền Cước, Hộ Phù Tam Trận.</div>
+      </div>
+    </article>
+
+    <article class="day">
+      <h3 class="ten">🏛 Ngày 4 — Bảo Tàng Chú Thuật Học Tokyo</h3>
+      <div class="mota">
+        <div class="time-item"><strong>09:00</strong> — Tham quan hiện vật: Ngón Sukuna mô phỏng, Bản thảo Chú Linh – Nguyền Vật.</div>
+        <div class="time-item"><strong>11:00</strong> — Xem trình diễn “Triển Chú Vô Hạn”.</div>
+        <div class="time-item"><strong>13:30</strong> — Gặp gỡ chú thuật sư cấp cao và nghe chia sẻ triết lý chiến đấu.</div>
+      </div>
+    </article>
+
+    <div class="note">
+      <h4>📌 Ghi chú:</h4>
+      <p>Tour không hỗ trợ tiêu diệt đặc cấp. </br> 
+      Mang giày thể thao, trang phục linh hoạt, tránh vật dụng kim loại hoặc có năng lượng bất thường. </br>
+      Hành khách có thể cảm thấy “rùng mình” hoặc “chóng mặt nhẹ” khi dùng kính chú linh – đây là hiện tượng bình thường.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="booking">
+    <h2>Đăng ký & Thông tin</h2>
+    <p>Chủ đề: <strong>Hiện đại – Siêu nhiên</strong> | Phong cách: <strong>Hành động / Nhập vai</strong> | Loại tour: <strong>2 chiều</strong></p>
+    <form class="booking-form" onsubmit="event.preventDefault(); alert('Cảm ơn! Chúng tôi sẽ liên hệ bạn sớm.');">
+      <label>Họ và tên <input type="text" required placeholder="Nguyễn Văn A" /></label>
+      <label>Email <input type="email" required placeholder="email@vd.com" /></label>
+      <label>Số điện thoại <input type="tel" required placeholder="+84 9..." /></label>
+      <label>Ghi chú (tùy chọn) <textarea placeholder="Ví dụ: muốn tham gia phần huấn luyện nâng cao..."></textarea></label>
+      <div class="form-row">
+        <button class="btn primary" type="submit">🔮 Đăng ký — 5 800 USD</button>
+        <button class="btn ghost" type="reset">🔄 Làm lại</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

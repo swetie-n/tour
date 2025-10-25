@@ -1,0 +1,228 @@
+body {
+  font-family: 'Baloo 2', 'Be Vietnam Pro', sans-serif;
+  background-color: #e7f0ff;
+  color: #0e1b3c;
+  margin: 0;
+  padding: 0;
+}
+
+#musicBtn {
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  background: #d7e5ff;
+  color: #0e1b3c;
+  border-radius: 12px;
+  border: 1px solid #a7c6ff;
+  padding: 8px 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(70, 120, 255, 0.25);
+}
+#musicBtn:hover {
+  background: #c3d8ff;
+  transform: scale(1.05);
+}
+
+.hero-jujutsu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: linear-gradient(120deg, #cfe4ff, #e6f1ff, #f7fbff);
+  padding: 60px 80px;
+  border-radius: 25px;
+  margin: 60px auto;
+  max-width: 1100px;
+  box-shadow: 0 0 30px rgba(70, 120, 255, 0.25);
+}
+
+.text-box {
+  flex: 1;
+}
+
+.text-box h1 {
+  font-size: 2.4em;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.text-box h1 span {
+  color: #1b4cff;
+  text-shadow: 0 0 10px rgba(100, 150, 255, 0.7);
+}
+
+.text-box p {
+  font-size: 1.1em;
+  color: #1a254b;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.image-box {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.image-box img {
+  border-radius: 20px;
+  width: 80%;  
+  height: auto;
+  box-shadow: 0 8px 20px rgba(60, 90, 200, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(60, 90, 200, 0.5);
+}
+
+.ticket, .camera {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  color: #0e1b3c;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket {
+  top: 15px;
+  left: 15%;
+}
+
+.camera {
+  bottom: 15px;
+  right: 15%;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #4e8cff;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 3px 10px rgba(50, 90, 200, 0.3);
+}
+.btn.primary:hover {
+  background: #3a74e6;
+}
+
+.btn.schedule {
+  background: #b7d1ff;
+  color: #0e1b3c;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 1px solid #94bbff;
+}
+.btn.schedule:hover {
+  background: #a7c4ff;
+}
+
+.overview,
+.itinerary {
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(240, 248, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(80, 130, 255, 0.2);
+}
+
+.overview h2,
+.itinerary h2 {
+  color: #2962ff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.day {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 30, 90, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.day:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 15px rgba(0, 30, 90, 0.15);
+}
+
+.time-item {
+  color: #12204b;
+  padding-left: 10px;
+  border-left: 3px solid #6aa6ff;
+  margin-bottom: 10px;
+}
+
+.note {
+  background: #e6f1ff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 60, 180, 0.15);
+  color: #0e1b3c;
+}
+.note h4 {
+  color: #2962ff;
+}
+
+.booking {
+  background: linear-gradient(145deg, #6aa6ff, #b7d1ff);
+  color: #0e1b3c;
+  padding: 50px 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(70, 120, 255, 0.4);
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+}
+.booking h2 {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(40, 80, 180, 0.6);
+}
+.booking-form {
+  margin-top: 25px;
+  text-align: left;
+}
+.booking-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #a7c6ff;
+  margin-top: 5px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+.booking-form textarea {
+  resize: vertical;
+}
+.form-row {
+  text-align: center;
+  margin-top: 20px;
+}
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
